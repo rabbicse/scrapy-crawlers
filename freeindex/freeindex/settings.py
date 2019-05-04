@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for cosylab_crawler project
+# Scrapy settings for freeindex project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,27 +9,27 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'cosylab_crawler'
+BOT_NAME = 'freeindex'
 
-SPIDER_MODULES = ['cosylab_crawler.spiders']
-NEWSPIDER_MODULE = 'cosylab_crawler.spiders'
+SPIDER_MODULES = ['freeindex.spiders']
+NEWSPIDER_MODULE = 'freeindex.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-# USER_AGENT = 'cosylab_crawler (+http://www.yourdomain.com)'
+# USER_AGENT = 'freeindex (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-# CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-# DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = 15
 # The download delay setting will honor only one of:
-# CONCURRENT_REQUESTS_PER_DOMAIN = 16
-# CONCURRENT_REQUESTS_PER_IP = 16
+CONCURRENT_REQUESTS_PER_DOMAIN = 32
+CONCURRENT_REQUESTS_PER_IP = 32
 
 # Disable cookies (enabled by default)
 # COOKIES_ENABLED = False
@@ -38,21 +38,23 @@ ROBOTSTXT_OBEY = True
 # TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-# DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
-# }
+DEFAULT_REQUEST_HEADERS = {
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    # 'upgrade-insecure-requests': '1',
+    # 'pragma': 'no-cache',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'
+}
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'cosylab_crawler.middlewares.CosylabCrawlerSpiderMiddleware': 543,
+#    'freeindex.middlewares.FreeindexSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'cosylab_crawler.middlewares.CosylabCrawlerDownloaderMiddleware': 543,
+#    'freeindex.middlewares.FreeindexDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -63,9 +65,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'cosylab_crawler.pipelines.CosylabCrawlerPipeline': 300,
-# }
+ITEM_PIPELINES = {
+   'freeindex.pipelines.FreeindexPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -88,33 +90,38 @@ ROBOTSTXT_OBEY = True
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-
 FEED_EXPORTERS = {
-    # 'csv': 'cosylab_crawler.csv_exporter.CosylabCsvExporter'
-    'csv': 'cosylab_crawler.csv_exporter.CosylabUCsvExporter'
+    'csv': 'freeindex.exporters.QuoteAllCsvItemExporter',
 }
 
-# By specifying the fields to export, the CSV export honors the order
-# rather than using a random order.
-EXPORT_FIELDS = [
-    'url',
-    'name',
-    'category',
-    'synonyms',
-    'entity_name',
-    'entity_category',
-    'num_of_sharedFlavor',
-    'wiki_page'
-]
+DOWNLOAD_TIMEOUT = 30
+# Retry many times since proxies often fail
+RETRY_TIMES = 20
+# Retry on most error codes since proxies fail for different reasons
+RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 404, 408]
 
-# By specifying the fields to export, the CSV export honors the order
-# rather than using a random order.
-EXPORTU_FIELDS = [
-    'url',
-    'name',
-    'category',
-    'synonyms',
-    'common_name',
-    'pubchem_id',
-    'flavor_profile'
-]
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy.downloadermiddlewares.retry.RetryMiddleware': 90,
+    'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
+    'freeindex.random_proxies.RandomProxy': 120,
+}
+
+# Proxy list containing entries like
+# http://host1:port
+# http://username:password@host2:port
+# http://host3:port
+# ...
+PROXY_LIST = 'proxy.txt'
+
+# Proxy mode
+# 0 = Every requests have different proxy
+# 1 = Take only one proxy from the list and assign it to every requests
+# 2 = Put a custom proxy to use in the settings
+PROXY_MODE = 0
+
+DATABASE = {'drivername': 'mysql',
+            'host': '127.0.0.1',
+            'port': '3306',
+            'username': 'admin',  # fill in your username here
+            'password': 'password',  # fill in your password here
+            'database': 'scrapy'}

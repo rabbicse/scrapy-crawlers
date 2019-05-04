@@ -20,3 +20,15 @@ class CosylabItem(scrapy.Item):
     entity_category = Field()
     num_of_sharedFlavor = Field()
     wiki_page = Field()
+
+
+class CosylabUpdatedItem(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    url = Field()
+    name = Field()
+    category = Field()
+    synonyms = Field()
+    common_name = Field()
+    pubchem_id = Field()
+    flavor_profile = Field()

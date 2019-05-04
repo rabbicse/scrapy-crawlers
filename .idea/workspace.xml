@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="667300f5-3988-4b1b-a9e3-fc7e7b790b6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/csv_exporter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab_updated.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/csv_exporter.py" beforeDir="false" afterPath="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/csv_exporter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab.py" beforeDir="false" afterPath="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,47 +22,66 @@
     <session id="-2027695186">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="7" />
+          <entry key="py" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="7" />
+          <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="py" value="1687" />
+          <entry key="py" value="2190" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="1687" />
+          <entry key="Python" value="2190" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
-                <marker date="1556468958868" expanded="true" signature="430:564" ph="..." />
+                <marker date="1556641707656" expanded="true" signature="409:543" ph="..." />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab_updated.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/freeindex/freeindex/spiders/freeindex_crawler.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -72,11 +96,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/csv_exporter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            <state relative-caret-position="285">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
-                <marker date="1556468861887" expanded="true" signature="123:128" ph="..." />
+                <marker date="1556643526872" expanded="true" signature="123:128" ph="..." />
               </folding>
             </state>
           </provider>
@@ -85,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="97" column="13" selection-start-line="97" selection-end-line="97" selection-end-column="13" />
+            <state relative-caret-position="1275">
+              <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -94,11 +118,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="480">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="18" />
               <folding>
                 <element signature="e#153#166#0" expanded="true" />
-                <marker date="1556461539312" expanded="true" signature="225:230" ph="..." />
+                <marker date="1556642553324" expanded="true" signature="225:230" ph="..." />
               </folding>
             </state>
           </provider>
@@ -119,11 +143,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/items.py" />
         <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/cosylab_csv_exporter.py" />
-        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/settings.py" />
-        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/csv_exporter.py" />
         <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab.py" />
+        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/items.py" />
+        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/csv_exporter.py" />
+        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/settings.py" />
+        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab_updated.py" />
       </list>
     </option>
   </component>
@@ -144,6 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,24 +180,17 @@
             <path>
               <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
               <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="cosylab_crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="cosylab_crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="cosylab_crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="freeindex" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fiverr_spiders_realrocker" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/freeindex" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -232,17 +251,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="27" width="1877" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25505188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32900432" />
@@ -250,11 +262,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,13 +289,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/items.py">
+    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <element signature="e#153#166#0" expanded="true" />
-            <marker date="1556461539312" expanded="true" signature="225:230" ph="..." />
+            <element signature="e#24#35#0" expanded="true" />
+            <marker date="1556641707656" expanded="true" signature="409:543" ph="..." />
           </folding>
         </state>
       </provider>
@@ -289,34 +307,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="97" column="13" selection-start-line="97" selection-end-line="97" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/csv_exporter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        <state relative-caret-position="285">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-            <marker date="1556468861887" expanded="true" signature="123:128" ph="..." />
+            <marker date="1556643526872" expanded="true" signature="123:128" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab.py">
+    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="1275">
+          <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="18" />
           <folding>
-            <element signature="e#24#35#0" expanded="true" />
-            <marker date="1556468958868" expanded="true" signature="430:564" ph="..." />
+            <element signature="e#153#166#0" expanded="true" />
+            <marker date="1556642553324" expanded="true" signature="225:230" ph="..." />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab_updated.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freeindex/freeindex/spiders/freeindex_crawler.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

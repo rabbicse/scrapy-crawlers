@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 import json
-import urllib.parse
-
-from scrapy import Request, Spider
 
 from cosylab_crawler.items import CosylabItem
+from scrapy import Request, Spider
 
 
 class CosylabSpider(Spider):
