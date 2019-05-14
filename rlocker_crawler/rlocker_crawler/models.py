@@ -8,10 +8,10 @@ Database models part - defines table for storing scraped data.
 Direct run will create the table.
 """
 
-from sqlalchemy import create_engine, Column, Integer, UnicodeText
+from sqlalchemy import create_engine, Column, Integer, UnicodeText, Unicode
 from sqlalchemy.ext.declarative import declarative_base
 
-from freeindex import settings
+from rlocker_crawler import settings
 
 DeclarativeBase = declarative_base()
 
@@ -31,9 +31,9 @@ def create_tables(engine):
     DeclarativeBase.metadata.create_all(engine)
 
 
-class FreeIndex(DeclarativeBase):
+class Model(DeclarativeBase):
     """Sqlalchemy deals model"""
-    __tablename__ = "free_index_data"
+    __tablename__ = "rlocker_data"
     __table_args__ = {
         'mysql_charset': 'utf8'
     }
@@ -45,21 +45,33 @@ class FreeIndex(DeclarativeBase):
                 setattr(self, k, kwargs[k])
 
     id = Column(Integer, primary_key=True)
-    name = Column(UnicodeText)
-    address = Column(UnicodeText)
-    city = Column(UnicodeText)
-    post_code = Column(UnicodeText)
-    telephone = Column(UnicodeText)
-    mobile = Column(UnicodeText)
-    website = Column(UnicodeText)
-    short_desc = Column(UnicodeText)
-    long_desc = Column(UnicodeText)
-    categories = Column(UnicodeText)
-    email = Column(UnicodeText)
-    opening_hours = Column(UnicodeText)
-    member_since = Column(UnicodeText)
-    manually_reviewed = Column(UnicodeText)
-    last_updated = Column(UnicodeText)
-    social_media_urls = Column(UnicodeText)
-    key_services = Column(UnicodeText)
+    item_id = Column(Unicode(255))
+    title = Column(UnicodeText)
+    description = Column(UnicodeText)
+    weight = Column(Unicode(255))
+    amount = Column(Unicode(255))
+    price = Column(Unicode(255))
+    category = Column(UnicodeText)
+    brand = Column(UnicodeText)
+    variations = Column(UnicodeText)
+    images_url = Column(UnicodeText)
+    spider = Column(Unicode(255))
+    url = Column(UnicodeText)
+
+
+class UrlModel(DeclarativeBase):
+    """Sqlalchemy deals model"""
+    __tablename__ = "url_data"
+    __table_args__ = {
+        'mysql_charset': 'utf8'
+    }
+
+    def __init__(self, **kwargs):
+        cls_ = type(self)
+        for k in kwargs:
+            if hasattr(cls_, k):
+                setattr(self, k, kwargs[k])
+
+    id = Column(Integer, primary_key=True)
+    spider = Column(Unicode(255))
     url = Column(UnicodeText)

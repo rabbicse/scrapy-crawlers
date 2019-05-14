@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 import json
+import random
 import re
+import time
 
 import requests
 import scrapy
 from scrapy import Request, Selector
 from scrapy.log import logger
 
-from freeindex import db_handler
+from freeindex import db_handler, settings
 from freeindex.items import FreeindexItem
 from freeindex.models import FreeIndex
 
@@ -27,41 +29,59 @@ from freeindex.models import FreeIndex
 
 class FreeindexCrawlerSpider(scrapy.Spider):
     # http://83.149.70.159:13010
+    index = 50
     name = 'freeindex_crawler'
+    rotate_user_agent = True
     allowed_domains = ['freeindex.co.uk']
-    # start_urls = [
-    #     "https://www.freeindex.co.uk/categories/entertainment_and_lifestyle/healthcare/complementary_therapy/",
-    #     "https://www.freeindex.co.uk/categories/arts_and_lifestyle/lifestyle_management/counselling/",
-    #     "https://www.freeindex.co.uk/categories/arts_and_lifestyle/kids/",
-    #     "https://www.freeindex.co.uk/categories/business_services/advertising/design_and_print/",
-    #     "https://www.freeindex.co.uk/categories/arts_and_lifestyle/education/",
-    #     "https://www.freeindex.co.uk/categories/industry/industrial_services/",
-    #     "https://www.freeindex.co.uk/categories/entertainment_and_lifestyle/healthcare/nursing_and_care_services/",
-    #     "https://www.freeindex.co.uk/categories/entertainment_and_lifestyle/beauty/hair_and_beauty_salons/",
-    #     "https://www.freeindex.co.uk/categories/arts_and_lifestyle/beauty/hairdressers/",
-    #     "https://www.freeindex.co.uk/categories/human_resources/recruitment_agency/",
-    #     "https://www.freeindex.co.uk/categories/business_management/management_consulting/",
-    #     "https://www.freeindex.co.uk/categories/entertainment_and_lifestyle/healthcare/massage_therapists/",
-    #     "https://www.freeindex.co.uk/categories/advertising_and_marketing/advertising_production_services/",
-    #     "https://www.freeindex.co.uk/categories/financial_and_legal/legal/lawyers/",
-    #     "https://www.freeindex.co.uk/categories/financial_and_accounting/commercial_law/",
-    #     "https://www.freeindex.co.uk/categories/business_management/small_office_home_office/secretarial_services/",
-    #     "https://www.freeindex.co.uk/categories/business_services/general_office_services/virtual_assistant/",
-    #     "https://www.freeindex.co.uk/categories/computers_and_internet/web_services/",
-    # ]
+    start_urls = [
+        "https://www.freeindex.co.uk/categories/entertainment_and_lifestyle/healthcare/complementary_therapy({})/".format(
+            index),
+        "https://www.freeindex.co.uk/categories/arts_and_lifestyle/lifestyle_management/counselling({})/".format(index),
+        "https://www.freeindex.co.uk/categories/arts_and_lifestyle/kids({})/".format(index),
+        "https://www.freeindex.co.uk/categories/business_services/advertising/design_and_print({})/".format(index),
+        "https://www.freeindex.co.uk/categories/arts_and_lifestyle/education({})/".format(index),
+        "https://www.freeindex.co.uk/categories/industry/industrial_services({})/".format(index),
+        "https://www.freeindex.co.uk/categories/entertainment_and_lifestyle/healthcare/nursing_and_care_services({})/".format(
+            index),
+        "https://www.freeindex.co.uk/categories/entertainment_and_lifestyle/beauty/hair_and_beauty_salons({})/".format(
+            index),
+        "https://www.freeindex.co.uk/categories/arts_and_lifestyle/beauty/hairdressers({})/".format(index),
+        "https://www.freeindex.co.uk/categories/human_resources/recruitment_agency({})/".format(index),
+        "https://www.freeindex.co.uk/categories/business_management/management_consulting({})/".format(index),
+        "https://www.freeindex.co.uk/categories/entertainment_and_lifestyle/healthcare/massage_therapists({})/".format(
+            index),
+        "https://www.freeindex.co.uk/categories/advertising_and_marketing/advertising_production_services({})/".format(
+            index),
+        "https://www.freeindex.co.uk/categories/financial_and_legal/legal/lawyers({})/".format(index),
+        "https://www.freeindex.co.uk/categories/financial_and_accounting/commercial_law({})/".format(index),
+        "https://www.freeindex.co.uk/categories/business_management/small_office_home_office/secretarial_services({})/".format(
+            index),
+        "https://www.freeindex.co.uk/categories/business_services/general_office_services/virtual_assistant({})/".format(
+            index),
+        "https://www.freeindex.co.uk/categories/computers_and_internet/web_services({})/".format(index),
+    ]
     __base_url = 'https://www.freeindex.co.uk'
     __api_url = 'https://www.freeindex.co.uk/customscripts/ajax_view_tel.asp?id={}&wherefrom=PROFILE'
 
     def start_requests(self):
         session = db_handler.Session()
         try:
-            with open('url.txt', 'r+') as f:
+            with open('url_updated.txt', 'r+') as f:
+                # i = 0
                 for details_url in f.readlines():
                     details_url = details_url.strip()
                     query = {'url': details_url}
                     q_data = session.query(FreeIndex).filter_by(**query).first()
                     if not q_data:
-                        yield Request(url=details_url, callback=self.parse_details)
+                        headers = {
+                            'User-Agent': random.choice(settings.USER_AGENT_CHOICES),
+                            'Upgrade-Insecure-Requests': '1',
+                            'Connection': 'keep-alive',
+                            'Host': 'www.freeindex.co.uk',
+                            'Accept-Language': 'en-US,en;q=0.5',
+                            'Accept-Encoding': 'gzip, deflate, br',
+                            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}
+                        yield Request(url=details_url, callback=self.parse_details, headers=headers)
                     else:
                         logger.debug('URL: {} already exists!'.format(details_url))
         except Exception as x:
@@ -90,7 +110,15 @@ class FreeindexCrawlerSpider(scrapy.Spider):
 
         next_link = response.xpath('//a[@class="boxlink"]/@href').getall()
         if next_link:
-            yield Request(url=self.__base_url + next_link[-1], callback=self.parse)
+            headers = {
+                'User-Agent': random.choice(settings.USER_AGENT_CHOICES),
+                'Upgrade-Insecure-Requests': '1',
+                'Connection': 'keep-alive',
+                'Host': 'www.freeindex.co.uk',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}
+            yield Request(url=self.__base_url + next_link[-1], headers=headers, callback=self.parse)
 
     def parse_details(self, response):
         item = FreeindexItem()
@@ -129,14 +157,24 @@ class FreeindexCrawlerSpider(scrapy.Spider):
                 continue
 
             label = tds[0].xpath('./text()').get()
-            if 'Member since' in label:
-                item['member_since'] = tds[1].xpath('./text()').get().strip()
 
-            if 'Manually reviewed' in label:
-                item['manually_reviewed'] = tds[1].xpath('./text()').get().strip()
+            try:
+                if 'Member since' in label:
+                    item['member_since'] = tds[1].xpath('./text()').get().strip()
+            except:
+                pass
 
-            if 'Last updated' in label:
-                item['last_updated'] = tds[1].xpath('./text()').get().strip()
+            try:
+                if 'Manually reviewed' in label:
+                    item['manually_reviewed'] = tds[1].xpath('./text()').get().strip()
+            except:
+                pass
+
+            try:
+                if 'Last updated' in label:
+                    item['last_updated'] = tds[1].xpath('./text()').get().strip()
+            except:
+                pass
 
         ks_item_tags = response.xpath('//h4[@class="DescItemTitle"]')
         for ks_item_tag in ks_item_tags:
@@ -152,58 +190,62 @@ class FreeindexCrawlerSpider(scrapy.Spider):
             more_texts = long_desc_tag.xpath('./hr/following-sibling::span/text()').getall()
             item['long_desc'] = ''.join([txt.strip('\n').strip() for txt in texts]) + ''.join(more_texts)
 
-        scripts = response.xpath('//script/text()').getall()
-        for script in scripts:
-            if '{"@context":' in script:
-                json_data = json.loads(script)
-                # print(json_data)
-                if 'openingHoursSpecification' in json_data:
-                    opening_hours = []
-                    j_opening_hours = json_data['openingHoursSpecification']
-                    for j_opening_hour in j_opening_hours:
-                        opening_hours.append('{}: {} - {}'.format(j_opening_hour['dayOfWeek'], j_opening_hour['opens'],
-                                                                  j_opening_hour['closes']))
-
-                    item['opening_hours'] = ', '.join(opening_hours)
-
-                if 'address' in json_data:
-                    addresses = []
-                    j_addr = json_data['address']
-                    if 'streetAddress' in j_addr:
-                        addresses.append(j_addr['streetAddress'])
-                    if 'addressLocality' in j_addr:
-                        addresses.append(j_addr['addressLocality'])
-                    if 'addressRegion' in j_addr:
-                        item['city'] = j_addr['addressRegion']
-                    if 'postalCode' in j_addr:
-                        item['post_code'] = j_addr['postalCode']
-                    item['address'] = ' '.join(addresses)
-
-        headers = {'X-Requested-With': 'XMLHttpRequest',
-                   'Referer': response.url,
-                   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-                   'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'}
-        # yield Request(url=self.__api_url.format(id), headers=headers, meta={'item': item}, callback=self.parse_phone)
-
         try:
-            res = requests.get(self.__api_url.format(id), headers=headers, proxies={'https': response.meta['proxy']},
-                               timeout=20, allow_redirects=True)
-            if res:
-                sel = Selector(text=res.text)
-                divs = sel.xpath('//div[@class="clearfix"]')
-                for div in divs:
-                    text = div.xpath('string(./div)').get()
-                    if 'Tel:' in text:
-                        tel = div.xpath('.//a/@href').get()
-                        if tel:
-                            item['telephone'] = tel.replace('tel:', '').strip()
+            scripts = response.xpath('//script/text()').getall()
+            for script in scripts:
+                if '{"@context":' in script:
+                    json_data = json.loads(script)
+                    # print(json_data)
+                    if 'openingHoursSpecification' in json_data:
+                        opening_hours = []
+                        j_opening_hours = json_data['openingHoursSpecification']
+                        for j_opening_hour in j_opening_hours:
+                            opening_hours.append(
+                                '{}: {} - {}'.format(j_opening_hour['dayOfWeek'], j_opening_hour['opens'],
+                                                     j_opening_hour['closes']))
 
-                    if 'Mobile:' in text:
-                        tel = div.xpath('.//a/@href').get()
-                        if tel:
-                            item['mobile'] = tel.replace('tel:', '').strip()
+                        item['opening_hours'] = ', '.join(opening_hours)
+
+                    if 'address' in json_data:
+                        addresses = []
+                        j_addr = json_data['address']
+                        if 'streetAddress' in j_addr:
+                            addresses.append(j_addr['streetAddress'])
+                        if 'addressLocality' in j_addr:
+                            addresses.append(j_addr['addressLocality'])
+                        if 'addressRegion' in j_addr:
+                            item['city'] = j_addr['addressRegion']
+                        if 'postalCode' in j_addr:
+                            item['post_code'] = j_addr['postalCode']
+                        item['address'] = ' '.join(addresses)
         except:
             pass
+
+        # headers = {'X-Requested-With': 'XMLHttpRequest',
+        #            'Referer': response.url,
+        #            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        #            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36'}
+        # yield Request(url=self.__api_url.format(id), headers=headers, meta={'item': item}, callback=self.parse_phone)
+
+        # try:
+        #     res = requests.get(self.__api_url.format(id), headers=headers, proxies={'https': response.meta['proxy']},
+        #                        timeout=20, allow_redirects=True)
+        #     if res:
+        #         sel = Selector(text=res.text)
+        #         divs = sel.xpath('//div[@class="clearfix"]')
+        #         for div in divs:
+        #             text = div.xpath('string(./div)').get()
+        #             if 'Tel:' in text:
+        #                 tel = div.xpath('.//a/@href').get()
+        #                 if tel:
+        #                     item['telephone'] = tel.replace('tel:', '').strip()
+        #
+        #             if 'Mobile:' in text:
+        #                 tel = div.xpath('.//a/@href').get()
+        #                 if tel:
+        #                     item['mobile'] = tel.replace('tel:', '').strip()
+        # except:
+        #     pass
 
         return item
 

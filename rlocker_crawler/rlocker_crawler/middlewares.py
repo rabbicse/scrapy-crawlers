@@ -4,14 +4,11 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-from random import choice
 
 from scrapy import signals
-from scrapy.exceptions import NotConfigured
-from scrapy.log import logger
 
 
-class FreeindexSpiderMiddleware(object):
+class RlockerCrawlerSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -59,7 +56,7 @@ class FreeindexSpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class FreeindexDownloaderMiddleware(object):
+class RlockerCrawlerDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
@@ -104,33 +101,3 @@ class FreeindexDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
-
-
-class RotateUserAgentMiddleware(object):
-    """Rotate user-agent for each request."""
-
-    def __init__(self, user_agents):
-        self.enabled = False
-        self.user_agents = user_agents
-
-    @classmethod
-    def from_crawler(cls, crawler):
-        user_agents = crawler.settings.get('USER_AGENT_CHOICES', [])
-
-        if not user_agents:
-            raise NotConfigured("USER_AGENT_CHOICES not set or empty")
-
-        o = cls(user_agents)
-        crawler.signals.connect(o.spider_opened, signal=signals.spider_opened)
-
-        return o
-
-    def spider_opened(self, spider):
-        self.enabled = getattr(spider, 'rotate_user_agent', self.enabled)
-
-    def process_request(self, request, spider):
-        if not self.enabled or not self.user_agents:
-            return
-
-        request.headers['user-agent'] = choice(self.user_agents)
-        logger.info('Using User-Agent: {}'.format(request.headers['user-agent']))
