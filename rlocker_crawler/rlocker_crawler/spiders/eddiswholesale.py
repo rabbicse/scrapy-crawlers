@@ -8,30 +8,29 @@ from rlocker_crawler.items import RlockerItem
 from rlocker_crawler.models import Model
 
 
-class HydrotekcommercialSpider(scrapy.Spider):
-    name = 'hydrotekcommercial'
-    __base_url = 'https://www.hydrotekcommercial.com'
-    allowed_domains = ['hydrotekcommercial.com']
-    start_urls = ['https://www.hydrotekcommercial.com/']
+class EddiswholesaleSpider(scrapy.Spider):
+    name = 'eddiswholesale'
+    __base_url = 'http://eddiswholesale.com'
+    __img_base_uri = 'https://eddiswholesale-2.azureedge.net'
+    allowed_domains = ['eddiswholesale.com']
+    start_urls = ['http://eddiswholesale.com/']
 
     # def start_requests(self):
-    #     uri = 'https://www.hydrotekcommercial.com/hydroponic-lamps/hortilux-blue-mh-1000w-mt1000b-d-hor-htl-blue-102207'
+    #     uri = 'https://www.eddiswholesale.com/homebox-spring-clearance/hb-vista-triangle-plus-120x75x200cm-hbx-vista-trplus'
     #     yield Request(url=uri, callback=self.parse_details)
-    #     # uri = 'https://www.megawatthydro.com/en/lighting-electrical'
-    #     # yield Request(url=uri, callback=self.parse_catalog)
 
     def parse(self, response):
-        links = response.xpath('//a[@class="category-link"]/@href').getall()
+        links = response.xpath('//div[@class="span4"]/ul/li/a/@href').getall()
         for link in links:
-            url = self.__base_url + link
-            yield Request(url=url, callback=self.parse_category)
+            cat_url = self.__base_url + link
+            yield Request(url=cat_url, callback=self.parse_category)
 
     def parse_category(self, response):
         try:
             session = db_handler.Session()
-            prod_urls = response.xpath('//a[@class="product-title"]/@href').getall()
-            for prod_url in prod_urls:
-                product_url = self.__base_url + prod_url
+            products = response.xpath('//a[@class="product-title"]/@href').getall()
+            for product in products:
+                product_url = self.__base_url + product
                 query = {'url': product_url, 'spider': self.name}
                 q_data = session.query(Model).filter_by(**query).first()
                 if not q_data:
@@ -44,23 +43,12 @@ class HydrotekcommercialSpider(scrapy.Spider):
         finally:
             session.close()
 
-
-        next_link = response.xpath('//a[@id="cmdViewMore"]/@href')
-        if next_link:
-            next_url = self.__base_url + next_link.get()
-            yield Request(url=next_url, callback=self.parse_category)
-
-        cat_urls = response.xpath('//a[@class="category-link"]/@href').getall()
-        for cat_url in cat_urls:
-            url = self.__base_url + cat_url
-            yield Request(url=url, callback=self.parse_category)
-
     def parse_details(self, response):
         item = RlockerItem()
         item['url'] = response.url
 
         try:
-            item['item_id'] = response.xpath('normalize-space(//p[@class="product-details-code"])').get().replace('Product Code:', '').strip()
+            item['item_id'] = response.xpath('//p[@class="product-details-code"]/text()').get().replace('Product Code:', '').strip()
         except:
             pass
 
@@ -73,12 +61,13 @@ class HydrotekcommercialSpider(scrapy.Spider):
 
         try:
             cats = []
-            catalogs = response.xpath('//ul[@class="breadcrumb"]/li/a/@title').getall()
+            catalogs = response.xpath('//ul[@class="breadcrumb"]/li/a')
             for catalog in catalogs:
-                if 'Home' in catalog:
+                t = catalog.xpath('./@title').get()
+                if 'Home' in t or 'Catalog' in t:
                     continue
 
-                cats.append(catalog.strip())
+                cats.append(t.strip())
             item['category'] = ' > '.join(cats)
         except:
             pass
@@ -92,15 +81,7 @@ class HydrotekcommercialSpider(scrapy.Spider):
             im_urls = []
             big_img = response.xpath('//img[@id="product-detail-gallery-main-img"]/@data-zoom-image').get()
             if big_img:
-                im_urls.append(self.__base_url + big_img)
-            image_urls = response.xpath(
-                '//img[contains(@id, "oucProductPictureViewer_rptProductPictureThumbnails_ctl")]')
-            for im_url in image_urls:
-                u = im_url.xpath('./@onmouseover').get()
-                u = u.split(',')[1].strip('\'')
-                i_url = self.__base_url + u
-                if i_url not in im_urls:
-                    im_urls.append(i_url)
+                im_urls.append(self.__img_base_uri + big_img)
             item['images_url'] = '; '.join(im_urls)
         except:
             pass
