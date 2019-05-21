@@ -27,7 +27,6 @@ class MygreenplanetSpider(scrapy.Spider):
             products = response.xpath('//a[@class="woocommerce-LoopProduct-link woocommerce-loop-product__link"]/@href').getall()
             for product in products:
                 product_url = product
-                print(product_url)
                 query = {'url': product_url, 'spider': self.name}
                 q_data = session.query(Model).filter_by(**query).first()
                 if not q_data:
@@ -65,7 +64,7 @@ class MygreenplanetSpider(scrapy.Spider):
             pass
 
         try:
-            item['price'] = response.xpath('normalize-space(//span[@class="electro-price"])').get()
+            item['price'] = response.xpath('normalize-space(//p[@class="price"])').get()
         except:
             pass
 

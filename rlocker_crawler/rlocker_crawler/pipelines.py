@@ -28,6 +28,7 @@ class RlockerCrawlerPipeline(object):
             query = {'url': item['url'], 'spider': spider.name}
             q_data = session.query(Model).filter_by(**query).first()
             if q_data:
+                logger.warning('URL: {} already exists!'.format(item['url']))
                 return
 
             item['spider'] = spider.name

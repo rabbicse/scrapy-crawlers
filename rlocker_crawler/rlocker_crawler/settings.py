@@ -35,7 +35,7 @@ CONCURRENT_REQUESTS_PER_IP = 8
 COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
-TELNETCONSOLE_ENABLED = False
+TELNETCONSOLE_ENABLED = True
 
 # Override the default request headers:
 DEFAULT_REQUEST_HEADERS = {
@@ -91,7 +91,7 @@ DOWNLOAD_TIMEOUT = 60
 # Retry many times since proxies often fail
 RETRY_TIMES = 5
 # Retry on most error codes since proxies fail for different reasons
-RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 408, 410]
+RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 408, 410, 429]
 
 
 # Enable and configure HTTP caching (disabled by default)
@@ -132,7 +132,7 @@ FEED_EXPORTERS = {
 3)Biofloral.com (done)
 4)hydrotekhydroponics.com (done)
 5)mygreenplanet.com (done)
-6)hawthornegc.ca 
+6)hawthornegc.ca (done)
 7) eddiswholesale.com (done)
 8) ledab.ca (done)
 9) naturalinsectcontrol.com 

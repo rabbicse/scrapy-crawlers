@@ -7,9 +7,8 @@
     <list default="true" id="b461ac75-f54c-4570-932e-8e501399d43a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rlocker_crawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rlocker_crawler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rlocker_crawler/.~lock.megawat_output.csv#" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rlocker_crawler/rlocker_crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rlocker_crawler/rlocker_crawler/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rlocker_crawler/rlocker_crawler/spiders/hydrotekcommercial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rlocker_crawler/rlocker_crawler/spiders/hydrotekcommercial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rlocker_crawler/rlocker_crawler/spiders/hawthornegc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../rlocker_crawler/rlocker_crawler/spiders/hawthornegc.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,17 +20,17 @@
     <session id="1365393386">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="3" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -65,7 +64,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freeindex/spiders/freeindex_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="300">
               <caret line="32" column="29" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="29" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
@@ -110,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freeindex/random_proxies.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-615">
+            <state relative-caret-position="330">
               <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
             </state>
           </provider>
@@ -119,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freeindex/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="1965">
               <caret line="135" column="79" selection-start-line="135" selection-start-column="79" selection-end-line="135" selection-end-column="79" />
               <folding>
                 <element signature="e#168#193#0" expanded="true" />
@@ -143,7 +142,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/freeindex/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
+            <state relative-caret-position="542">
               <caret line="129" selection-start-line="129" selection-end-line="133" selection-end-column="54" />
             </state>
           </provider>
@@ -152,7 +151,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proxy.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
+            <state relative-caret-position="14265">
               <caret line="951" column="49" selection-start-line="951" selection-start-column="49" selection-end-line="951" selection-end-column="49" />
             </state>
           </provider>
@@ -161,7 +160,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freeindex/prx.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="56865">
               <caret line="3791" column="27" selection-start-line="3791" selection-start-column="27" selection-end-line="3791" selection-end-column="27" />
             </state>
           </provider>
@@ -227,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,7 +243,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,9 +284,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="27" width="1877" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18569088" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19224468" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -301,7 +299,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -338,6 +336,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/freeindex/spiders/freeindex_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/freeindex/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -365,6 +373,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/freeindex/random_proxies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/freeindex/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1965">
+          <caret line="135" column="79" selection-start-line="135" selection-start-column="79" selection-end-line="135" selection-end-column="79" />
+          <folding>
+            <element signature="e#168#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/freeindex/exporters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -375,50 +400,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freeindex/spiders/freeindex_crawler.py">
+    <entry file="file://$PROJECT_DIR$/proxy.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="29" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="14265">
+          <caret line="951" column="49" selection-start-line="951" selection-start-column="49" selection-end-line="951" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/freeindex/prx.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="56865">
           <caret line="3791" column="27" selection-start-line="3791" selection-start-column="27" selection-end-line="3791" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proxy.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="951" column="49" selection-start-line="951" selection-start-column="49" selection-end-line="951" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freeindex/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="135" column="79" selection-start-line="135" selection-start-column="79" selection-end-line="135" selection-end-column="79" />
-          <folding>
-            <element signature="e#168#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freeindex/random_proxies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-615">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/freeindex/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
+        <state relative-caret-position="542">
           <caret line="129" selection-start-line="129" selection-end-line="133" selection-end-column="54" />
         </state>
       </provider>
