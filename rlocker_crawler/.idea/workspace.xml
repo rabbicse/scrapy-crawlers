@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f9bb5d-9e0e-46aa-af58-6c264d8eb10d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../cloudscene/.idea/cloudscene.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cloudscene/proxy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arzt_crawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../arzt_crawler/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arzt_crawler/arzt_crawler/spiders/arzt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../arzt_crawler/arzt_crawler/spiders/arzt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arzt_crawler/proxy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../arzt_crawler/proxy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../freeindex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../freeindex/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../freeindex/freeindex/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../freeindex/freeindex/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../freeindex/freeindex/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../freeindex/freeindex/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../freeindex/freeindex/spiders/freeindex_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/../freeindex/freeindex/spiders/freeindex_crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proxy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/proxy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlocker_crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlocker_crawler/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlocker_crawler/spiders/biofloral.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlocker_crawler/spiders/biofloral.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlocker_crawler/spiders/eddiswholesale.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlocker_crawler/spiders/eddiswholesale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rlocker_crawler/spiders/hydrotekcommercial.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlocker_crawler/spiders/hydrotekcommercial.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,54 +25,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-569527308">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.6" value="3" />
-          <entry key="project.open.time.7" value="5" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="19" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="40" />
-          <entry key="txt" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="40" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="9047" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="9047" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rlocker_crawler/items.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <marker date="1557475492178" expanded="true" signature="200:205" ph="..." />
               </folding>
@@ -66,37 +40,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/hawthornegc.py">
+        <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/eddiswholesale.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="51" />
+            <state relative-caret-position="135">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/biofloral.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="42" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="42" />
               <folding>
-                <element signature="e#24#35#0" expanded="true" />
-                <marker date="1558458952842" expanded="true" signature="464:473" ph="..." />
+                <element signature="e#24#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proxy.txt">
+        <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/hydrotekcommercial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14235">
-              <caret line="949" column="50" selection-start-line="949" selection-start-column="50" selection-end-line="949" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/mygreenplanet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="61" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="61" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-                <marker date="1558457698819" expanded="true" signature="475:480" ph="..." />
-                <marker date="1558457698819" expanded="true" signature="475:484" ph="..." />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -106,6 +74,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="30" column="73" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rlocker_crawler/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proxy.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -131,10 +117,7 @@
         <option value="$PROJECT_DIR$/rlocker_crawler/exporters.py" />
         <option value="$PROJECT_DIR$/rlocker_crawler/spiders/pgarden.py" />
         <option value="$PROJECT_DIR$/rlocker_crawler/spiders/megawat.py" />
-        <option value="$PROJECT_DIR$/rlocker_crawler/spiders/biofloral.py" />
-        <option value="$PROJECT_DIR$/rlocker_crawler/spiders/hydrotekcommercial.py" />
         <option value="$PROJECT_DIR$/rlocker_crawler/random_proxies.py" />
-        <option value="$PROJECT_DIR$/rlocker_crawler/spiders/eddiswholesale.py" />
         <option value="$PROJECT_DIR$/rlocker_crawler/proxy.txt" />
         <option value="$PROJECT_DIR$/rlocker_crawler/spiders/ledab.py" />
         <option value="$PROJECT_DIR$/rlocker_crawler/spiders/growlights.py" />
@@ -143,8 +126,11 @@
         <option value="$PROJECT_DIR$/rlocker_crawler/spiders/mygreenplanet.py" />
         <option value="$PROJECT_DIR$/rlocker_crawler/pipelines.py" />
         <option value="$PROJECT_DIR$/rlocker_crawler/spiders/hawthornegc.py" />
+        <option value="$PROJECT_DIR$/rlocker_crawler/spiders/eddiswholesale.py" />
+        <option value="$PROJECT_DIR$/rlocker_crawler/spiders/hydrotekcommercial.py" />
         <option value="$PROJECT_DIR$/proxy.txt" />
         <option value="$PROJECT_DIR$/rlocker_crawler/settings.py" />
+        <option value="$PROJECT_DIR$/rlocker_crawler/spiders/biofloral.py" />
       </list>
     </option>
   </component>
@@ -192,6 +178,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../fiverr_spiders_realrocker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -224,10 +211,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="27" width="1877" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="43" y="25" width="1877" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3058438" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1639698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -253,9 +239,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/rlocker_crawler/exporters.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -271,13 +254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/biofloral.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -300,20 +276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
           <caret line="43" selection-start-line="43" selection-end-line="47" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/hydrotekcommercial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/eddiswholesale.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -352,17 +314,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/settings.py">
+    <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/mygreenplanet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-716">
-          <caret line="41" selection-start-line="41" selection-end-line="45" selection-end-column="125" />
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+            <marker date="1558457698819" expanded="true" signature="475:480" ph="..." />
+            <marker date="1558457698819" expanded="true" signature="475:484" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proxy.txt">
+    <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/hawthornegc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14235">
-          <caret line="949" column="50" selection-start-line="949" selection-start-column="50" selection-end-line="949" selection-end-column="50" />
+        <state relative-caret-position="845">
+          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="51" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+            <marker date="1558458952842" expanded="true" signature="464:473" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlocker_crawler/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <marker date="1557475492178" expanded="true" signature="200:205" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/eddiswholesale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/hydrotekcommercial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -373,35 +368,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/items.py">
+    <entry file="file://$PROJECT_DIR$/rlocker_crawler/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <marker date="1557475492178" expanded="true" signature="200:205" ph="..." />
-          </folding>
+        <state relative-caret-position="465">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/hawthornegc.py">
+    <entry file="file://$PROJECT_DIR$/proxy.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="51" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-            <marker date="1558458952842" expanded="true" signature="464:473" ph="..." />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/mygreenplanet.py">
+    <entry file="file://$PROJECT_DIR$/rlocker_crawler/spiders/biofloral.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="61" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="61" />
+        <state relative-caret-position="210">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="42" />
           <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <marker date="1558457698819" expanded="true" signature="475:480" ph="..." />
-            <marker date="1558457698819" expanded="true" signature="475:484" ph="..." />
+            <element signature="e#24#33#0" expanded="true" />
           </folding>
         </state>
       </provider>

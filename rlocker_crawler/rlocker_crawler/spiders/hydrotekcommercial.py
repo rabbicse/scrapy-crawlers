@@ -10,6 +10,8 @@ from rlocker_crawler.models import Model
 
 class HydrotekcommercialSpider(scrapy.Spider):
     name = 'hydrotekcommercial'
+    __username = 'greenleafhydroponicscanada@gmail.com'
+    __password = 'Familyfirst1.'
     __base_url = 'https://www.hydrotekcommercial.com'
     allowed_domains = ['hydrotekcommercial.com']
     start_urls = ['https://www.hydrotekcommercial.com/']

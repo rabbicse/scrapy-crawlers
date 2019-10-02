@@ -16,16 +16,15 @@ class ArztSpider(scrapy.Spider):
     allowed_domains = ['arzt-auskunft.de']
     start_urls = ['https://www.arzt-auskunft.de/facharztgebiete/']
 
-    def start_requests(self):
-        uri = 'https://www.arzt-auskunft.de/arzt/innere-medizin-und-kardiologie/kassel/dr-karl-friedrich-appel-2125337'
-        item = {'url': uri}
-        yield Request(url=uri, meta={'item': item}, callback=self.parse_details)
+    # def start_requests(self):
+    #     uri = 'https://www.arzt-auskunft.de/arzt/innere-medizin-und-kardiologie/kassel/dr-karl-friedrich-appel-2125337'
+    #     item = {'url': uri}
+    #     yield Request(url=uri, meta={'item': item}, callback=self.parse_details)
 
     def parse(self, response):
         links = response.xpath('//ul[@class="iqw"]//li/a/@href').getall()
         for link in links:
             yield Request(url=link, callback=self.parse_products)
-            break
 
     def parse_products(self, response):
         try:
@@ -40,7 +39,6 @@ class ArztSpider(scrapy.Spider):
                     yield Request(url=product_url, meta={'item': item}, callback=self.parse_details)
                 else:
                     logger.debug('URL: {} already exists!'.format(product_url))
-                break
         except:
             pass
         finally:
@@ -74,4 +72,48 @@ class ArztSpider(scrapy.Spider):
         except Exception as x:
             print(x)
 
-        print(item)
+        try:
+            item['website'] = response.xpath('//a[@itemprop="url"]/@href').get()
+        except:
+            pass
+
+        try:
+            divs = response.xpath('//div[@class="row"]')
+            for div in divs:
+                if 'Öffnungszeiten:' in div.get():
+                    text = div.xpath('normalize-space(./div[@class="col-sm-12"])').get()
+                    item['opening_hours'] = text
+        except:
+            pass
+
+        try:
+            tags = response.xpath('//h3[@class="ind-h3"]')
+            for tag in tags:
+
+                if 'Fachgebiet:' in tag.get():
+                    try:
+                        item['area_of_expertise'] = tag.xpath('./following-sibling::text()[1]').get().strip()
+                    except:
+                        pass
+
+                if 'Therapieschwerpunkte:' in tag.get():
+                    try:
+                        therapies = tag.xpath('./following-sibling::text()').getall()
+                        item['therapy_areas_of_focus'] = ', '.join([th.strip() for th in therapies if th.replace('\r\n', '').strip() != ''])
+                    except:
+                        pass
+        except:
+            pass
+
+        try:
+            divs = response.xpath('//div[@class="arztprofil"]')
+            for div in divs:
+                if 'Patientenzufriedenheit:' in div.get():
+                    item['patient_satisfaction'] = div.xpath('./following-sibling::span/text()').get()
+                if 'Patientenservice:' in div.get():
+                    item['patient_service'] = div.xpath('./following-sibling::span/text()').get()
+        except:
+            pass
+
+        # print(item)
+        return item

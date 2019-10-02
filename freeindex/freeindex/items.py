@@ -28,4 +28,5 @@ class FreeindexItem(scrapy.Item):
     last_updated = scrapy.Field()
     social_media_urls = scrapy.Field()
     key_services = scrapy.Field()
+    top_category = scrapy.Field()
     url = scrapy.Field()

@@ -33,7 +33,8 @@ def create_tables(engine):
 
 class FreeIndex(DeclarativeBase):
     """Sqlalchemy deals model"""
-    __tablename__ = "free_index_data"
+    # __tablename__ = "free_index_data"
+    __tablename__ = "free_index_data_updated"
     __table_args__ = {
         'mysql_charset': 'utf8'
     }
@@ -62,4 +63,5 @@ class FreeIndex(DeclarativeBase):
     last_updated = Column(UnicodeText)
     social_media_urls = Column(UnicodeText)
     key_services = Column(UnicodeText)
+    top_category = Column(UnicodeText)
     url = Column(UnicodeText)
