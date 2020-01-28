@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="667300f5-3988-4b1b-a9e3-fc7e7b790b6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloudscene/.idea/cloudscene.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudscene/proxy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ewg_crawler/ewg_crawler/db_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ewg_crawler/ewg_crawler/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ewg_crawler/ewg_crawler/random_proxies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ewg_crawler/proxy.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whed_crawler/whed_crawler/db_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whed_crawler/whed_crawler/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arzt_crawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/arzt_crawler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arzt_crawler/arzt_crawler/spiders/arzt.py" beforeDir="false" afterPath="$PROJECT_DIR$/arzt_crawler/arzt_crawler/spiders/arzt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arzt_crawler/proxy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/arzt_crawler/proxy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freeindex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/freeindex/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freeindex/freeindex/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/freeindex/freeindex/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freeindex/freeindex/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/freeindex/freeindex/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freeindex/freeindex/spiders/freeindex_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/freeindex/freeindex/spiders/freeindex_crawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rlocker_crawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rlocker_crawler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rlocker_crawler/proxy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rlocker_crawler/proxy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/spiders/biofloral.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/spiders/biofloral.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/spiders/eddiswholesale.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/spiders/eddiswholesale.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/spiders/hydrotekcommercial.py" beforeDir="false" afterPath="$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/spiders/hydrotekcommercial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ewg_crawler/ewg_crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ewg_crawler/ewg_crawler/settings.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,106 +15,6 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/scrapy_crawlers$cosylab.coverage" NAME="cosylab Coverage Results" MODIFIED="1556465153884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/spiders/ewg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="41" selection-start-line="41" selection-end-line="47" selection-end-column="79" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" column="62" selection-start-line="86" selection-start-column="62" selection-end-line="86" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ewg_crawler/proxy.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" selection-start-line="36" selection-end-line="38" selection-end-column="28" />
-              <folding>
-                <element signature="e#193#222#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/arzt_crawler/arzt_crawler/db_handler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/arzt_crawler/arzt_crawler/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-              <folding>
-                <element signature="e#249#324#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/freeindex/freeindex/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="61" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/freeindex/freeindex/middlewares.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="108" selection-start-line="108" selection-end-line="135" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/middlewares.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="108" column="31" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="31" />
-              <folding>
-                <element signature="e#168#193#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -139,40 +22,9 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>spider</find>
-      <find>RotateUserAgentMiddleware</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>scrapy.Field()</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/cosylab_csv_exporter.py" />
-        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab.py" />
-        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/items.py" />
-        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/csv_exporter.py" />
-        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/settings.py" />
-        <option value="$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab_updated.py" />
-        <option value="$PROJECT_DIR$/freeindex/freeindex/spiders/freeindex_crawler.py" />
-        <option value="$PROJECT_DIR$/ewg_crawler/ewg_crawler/db_handler.py" />
-        <option value="$PROJECT_DIR$/ewg_crawler/ewg_crawler/items.py" />
-        <option value="$PROJECT_DIR$/ewg_crawler/ewg_crawler/models.py" />
-        <option value="$PROJECT_DIR$/ewg_crawler/ewg_crawler/proxy.txt" />
-        <option value="$PROJECT_DIR$/ewg_crawler/ewg_crawler/pipelines.py" />
-        <option value="$PROJECT_DIR$/ewg_crawler/ewg_crawler/middlewares.py" />
-        <option value="$PROJECT_DIR$/ewg_crawler/proxy.txt" />
-        <option value="$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/settings.py" />
-        <option value="$PROJECT_DIR$/ewg_crawler/ewg_crawler/settings.py" />
-        <option value="$PROJECT_DIR$/ewg_crawler/ewg_crawler/spiders/ewg.py" />
-      </list>
-    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -180,89 +32,19 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="43" />
-    <option name="y" value="34" />
-    <option name="width" value="1877" />
-    <option name="height" value="1046" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="arzt_crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="arzt_crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="arzt_crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="ewg_crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="ewg_crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="ewg_crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="ewg_crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="ewg_crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="freeindex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="freeindex" type="462c0819:PsiDirectoryNode" />
-              <item name="freeindex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="rlocker_crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy-crawlers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy-crawlers" type="462c0819:PsiDirectoryNode" />
-              <item name="rlocker_crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="rlocker_crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1WiLyQJ5iUH2G4LXi8hu99asUjd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ewg_crawler/ewg_crawler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -271,18 +53,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ewg_crawler/ewg_crawler" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="cosylab" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -313,6 +83,19 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -326,312 +109,21 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="43" y="25" width="1877" height="1055" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25674218" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32900432" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24959038" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/python3.6/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="301" column="4" selection-start-line="301" selection-start-column="4" selection-end-line="301" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-            <marker date="1556641707656" expanded="true" signature="409:543" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/spiders/cosylab_updated.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freeindex/proxy.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14610">
-          <caret line="974" column="49" selection-start-line="974" selection-start-column="49" selection-end-line="974" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freeindex/freeindex/spiders/freeindex_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="94" selection-start-line="94" selection-end-line="103" selection-end-column="27" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freeindex/freeindex/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/csv_exporter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <marker date="1556643526872" expanded="true" signature="123:128" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freeindex/freeindex/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freeindex/freeindex/random_proxies.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cosylab_crawler/cosylab_crawler/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="18" />
-          <folding>
-            <element signature="e#153#166#0" expanded="true" />
-            <marker date="1556642553324" expanded="true" signature="225:230" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/spiders/mygreenplanet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="39" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alle_crawler/alle_crawler/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-400" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/items.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="e#193#222#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/db_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arzt_crawler/arzt_crawler/spiders/arzt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="34" selection-start-line="34" selection-end-line="40" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="62" lean-forward="true" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arzt_crawler/arzt_crawler/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/proxy.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arzt_crawler/arzt_crawler/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-760" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arzt_crawler/arzt_crawler/random_proxies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-760" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/random_proxies.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/random_proxies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-535">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#1124#1133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rlocker_crawler/rlocker_crawler/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1715">
-          <caret line="134" column="23" lean-forward="true" selection-start-line="134" selection-start-column="23" selection-end-line="134" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/spiders/ewg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" selection-start-line="41" selection-end-line="47" selection-end-column="79" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="62" selection-start-line="86" selection-start-column="62" selection-end-line="86" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ewg_crawler/proxy.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arzt_crawler/arzt_crawler/db_handler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arzt_crawler/arzt_crawler/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-          <folding>
-            <element signature="e#249#324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freeindex/freeindex/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="61" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freeindex/freeindex/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="108" selection-start-line="108" selection-end-line="135" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="108" column="31" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="31" />
-          <folding>
-            <element signature="e#168#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ewg_crawler/ewg_crawler/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" selection-start-line="36" selection-end-line="38" selection-end-column="28" />
-          <folding>
-            <element signature="e#193#222#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="470" y="187" key="SettingsEditor" timestamp="1580219399008">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state x="470" y="187" key="SettingsEditor/43.27.1877.1053@43.27.1877.1053" timestamp="1580219399008" />
+    <state x="749" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580219460759">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state x="749" y="472" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/43.27.1877.1053@43.27.1877.1053" timestamp="1580219460759" />
+    <state x="629" y="283" width="704" height="538" key="find.popup" timestamp="1580139657778">
+      <screen x="43" y="27" width="1877" height="1053" />
+    </state>
+    <state x="629" y="283" width="704" height="538" key="find.popup/43.27.1877.1053@43.27.1877.1053" timestamp="1580139657778" />
   </component>
 </project>
